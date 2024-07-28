@@ -1,0 +1,387 @@
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Reddit Mono;
+}
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+.s1{
+  padding: 15px 15px;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#header .logo{
+  padding: 20px 19px;
+  cursor: pointer;
+}
+#header a{
+  text-decoration: none;
+  color: #fff;
+}
+#header i{
+  width: 25px;
+  height: 50px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+#header .socials{
+  padding: 0 40px;
+}
+#header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+#header nav a{
+  padding: 0 30px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  position: relative;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+
+}
+#header nav a:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#header nav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+#hero{
+  background-image: url("images/Untitled design.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+}
+#hero h2,h4{
+  padding: 10px 70px;
+}
+#hero h2{
+  padding-top: 180px;
+  font-weight: 900;
+  font-size: 50px;
+}
+#hero h4{
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+  color: rgb(114, 36, 36);
+}
+#skills{
+  background: #0f0f0f;
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+  margin-top: 0;
+  padding-top: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+#skills .title{
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#skills h2{
+  font-size: 50px;
+  padding-top: 50px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #fff;
+}
+#skills .skill-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #281010;
+  margin: 0 250px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #913939;
+  padding: 0%;
+}
+#skills .skill{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 5px;
+}
+#skills .skill-name h4{
+  padding: 10px 100px;
+  color: #fff;
+}
+#skills .skill-bar{
+  margin: 0.86rem 7rem;
+  border-radius: 10px;
+  height: 15px;
+  width: 60%;
+  background-color: gray;
+}
+#skills .title{
+  margin: 70px;
+}
+#skills .progress{
+  margin: 0;
+  margin-left: 3px;
+  margin-top: 2.5px;
+  align-items: start;
+  border-radius: 10px;
+  height: 10px;
+  background-color: #913939;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+}
+#skills .skill-bar .n1{
+  margin-right: 100px;
+  
+}
+#skills .skill-bar .n2{
+  margin-right: 70px;
+}
+#skills .skill-bar .n3{
+  margin-right: 170px;
+}
+#skills .skill-bar .n4{
+  margin-right: 250px;
+}
+.fancy {
+  position: relative;
+  white-space: nowrap;
+  &:after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+  }
+}
+#projects{
+  margin-bottom: 50px;
+}
+#projects .title{
+  text-align: center;
+}
+#projects .subtitle{
+  margin:0;
+  padding: 0%;
+}
+#projects .maintitle{
+  margin:0;
+  padding: 0%;
+}
+#projects .subtitle h4{
+  margin:0;
+  padding: 0 5px;
+  font-size: 15px;
+}
+#projects .maintitle h2{
+  margin:0;
+  padding: 0 5px;
+  font-weight: 900;
+  font-size: 50px;
+  font-family: 'Rocher';
+
+}
+
+#projects .project-banners{
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin: 20px 200px;
+  :hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+}
+#projects .project-banners .banner{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 272px;
+  height: 300px;
+  cursor: pointer;
+  
+}
+#projects .project-banners .bimage{
+  width: 270px;
+  height: 200px;
+}
+#projects .project-banners .bimage:hover{
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 999;
+}
+
+#projects .b1 .bimage{
+  background-image: url("images/b1.png");
+  background-position:center;
+}
+#projects .b2 .bimage{
+  background-image: url("images/b2.png");
+  background-position:center;
+}
+#projects .b3 .bimage{
+  background-image: url("images/b3.png");
+  background-position:center;
+}
+#projects .btext{
+  text-align: center;
+  padding-top: 20px;
+}
+#projects .btext h4{
+  background-color: #ffffff;
+  font-size: 15px;
+  padding: 0%;
+}
+#projects .btext h5{
+  font-size: 10px;
+  color: #585454;
+}
+#projects .github-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .github-button button{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:  center;
+  padding: 5px;
+  width: 170px;
+  height: 30px;
+  border: 1px solid rgba(114, 110, 110, 0.4);
+  border-radius: 3px;
+  color:rgba(114, 110, 110, 1) ;
+}
+#divider{
+  width: 100%;
+  height: 10vh;
+  background-color: #46211A;
+}
+#divider{
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+#divider .d1{
+  height: 2vh;
+  width: 70px;
+  margin: 4vh 10px;
+  background-color: rgb(164, 56, 32);
+  border-radius: 5px;
+  box-shadow: 6px 7px 3px rgba(164, 56, 32, 0.06);
+}
+#divider .d4{
+  margin-right: 20px;
+}
+#contact{
+  background-image: url("images/contact.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+#contact .main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+#contact .contact-head h1{
+  margin: 50px 10px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  top: 50%;
+  left: 10%;
+  font-size:90px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #f8b063,
+						20px 20px #000000;
+}
+#contact .input{
+  margin: 50px 100px;
+}
+#contact input{
+  width: 400px;
+  border-radius: 20px;
+  padding: 0 30px;
+  border: 0px solid #F1D3B2;
+  background-color: rgb(241, 211, 178);
+}
+#contact .name,.email,.message{
+  height: 40px;
+}
+#contact .name input,.email input{
+  height: 35px;
+}
+#contact .message input{
+  height: 90px;
+}
+#contact .message-button{
+  margin-top: 90px ;
+  margin-left: 130px;
+}
+#contact button {
+  background-color: #f7ae61;
+  border-radius: 100px;
+  box-shadow: rgba(249, 204, 156, 0.2) 0 -25px 18px -14px inset,rgba(249, 204, 156, .15) 0 1px 2px,rgba(249, 204, 156, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: #F1D3B2;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#contact button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
